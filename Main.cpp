@@ -2,7 +2,7 @@
 #include <map>
 #include "Menu.h"
 
-using namespace N;
+using namespace menu_namespace;
 using namespace std;
 
 int main() {
@@ -19,6 +19,6 @@ int main() {
     
     
     // test menu interaction
-    mainMenu.displayHelpMenu();
+    mainMenu.displayMenuOptions(testInteraction);
     return 0;
 }
