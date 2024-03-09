@@ -13,9 +13,9 @@ using namespace std;
 
   // display welcome messages on build
   Menu::Menu() {
-    std::cout << WELCOME_MESSAGE << endl;
-    cout << HELP_MENU << endl;
-    std::cout << HELP << endl;
+    cout << WELCOME_MESSAGE;
+    cout << HELP_MENU;
+    cout << HELP << endl;
   };
 
   void Menu::displayHelpMenu() {
@@ -31,3 +31,13 @@ using namespace std;
       cout << "[" << pair.first << "]- " << pair.second << endl;
     });
   };
+
+  // get the user input
+  string Menu::getUserInput() {
+    cout << WHAT_DO << endl;
+    getline(cin, userInput);
+
+    cout << userInput;
+
+    return userInput;
+  }

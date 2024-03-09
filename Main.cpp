@@ -20,5 +20,6 @@ int main() {
     
     // test menu interaction
     mainMenu.displayMenuOptions(testInteraction);
+    mainMenu.getUserInput();
     return 0;
 }
